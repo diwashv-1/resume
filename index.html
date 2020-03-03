@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kshitij_Dhakal_resume2020</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 
 <body>
@@ -14,40 +15,66 @@
             <div class="col" style="width: 100%;">
                 <div class="col">
                     <div class="chapter">Kshitij Dhakal</div>
-                    <div class="subtitle">Java Developer</div>
+                    <div class="chapter-sub">Java Developer</div>
                 </div>
                 <div class="row">
-                    <div>+977-9869241546</div>
-                    <div>dhakalkshitij@gmail.com</div>
-                    <div>Narayangarh, Chitwan</div>
+                    <div class="contact-items">+977-9869241546</div>
+                    <div class="contact-items">dhakalkshitij@gmail.com</div>
+                    <div class="contact-items"><a href="http://kshitij-dhakal.github.io">kshitij-dhakal.github.io</a>
+                    </div>
+                    <div class="contact-items">Narayangarh, Chitwan</div>
                 </div>
             </div>
-            <div class="photo-div image-container col" style="">
+            <div class="photo-div image-container col">
                 <img class="photo" src="images/IMG-d983b35c9f35c5caea4668d0f0ea22cb-V.jpg" height="150em" width="auto"
                     style="border-radius: 100%;
                     ">
             </div>
 
         </div>
-        <div class="row">
-            <div class="col">
+        <div class="row resume-body">
+            <div class="col left-col">
                 <div>
                     <div class="section">Education</div>
-                    <div class="subsection">Small Heaven Model School</div>
+                    <div class="subsection">Bachelor’s Degree in Computer Science,</div>
+                    <div class="row">
+                        <div class="university-info">Tribhuvan University</div>
+                        <div class="university-info"><i class="fas fa-calendar" style="margin-right: 0.2em;"></i>
+                            2016-2020</div>
+                        <div class="university-info"><i class="fas fa-map-marker" style="margin-right: 0.2em;"></i>
+                            Kathmandu, Nepal</div>
+                    </div>
+                    <!-- <div class="subsection">10 +2</div>
+                    <div class="row">
+                        <div class="university-info">Apex Academy</div>
+                        <div class="university-info"><i class="fas fa-calendar" style="margin-right: 0.2em;"></i>
+                            2014-2016</div>
+                        <div class="university-info"><i class="fas fa-map-marker" style="margin-right: 0.2em;"></i>
+                            Chitwan, Nepal</div>
+                    </div>
+                    <div class="subsection">School Leaving Certificate</div>
+                    <div class="row">
+                        <div class="university-info">Small Heaven Model School</div>
+                        <div class="university-info"><i class="fas fa-calendar" style="margin-right: 0.2em;"></i>
+                            2008-2013</div>
+                        <div class="university-info"><i class="fas fa-map-marker" style="margin-right: 0.2em;"></i>
+                            Chitwan, Nepal</div>
+                    </div> -->
+
                 </div>
                 <div>
                     <div class="section">My Time</div>
                     <!-- <div class="subsection"></div> -->
                     <div style="
                     /* background-color: cadetblue; */
-                     width: 50vw;
+                     /* width: 40vw; */
                      height: auto;
                      ">
                         <div style="
                         /* background: aqua; */
-                        width: 35vw;
+                        width: 30vw;
                         height: auto;
-                        margin: auto;
+                        /* margin: auto; */
                        ">
                             <canvas height="15em" width="24em" id="myChart"></canvas>
                         </div>
@@ -61,9 +88,26 @@
                 <div class="subsection">Java Developer</div>
                 <div class="subsubsection">Salyani Technologies Ltd.</div>
             </div>
-            <div class="col">
+            <div class="col right-col">
                 <div class="section">Find Me Online</div>
+                <div class="col">
+                    <table>
+                        <tr data-href="https://www.facebook.com/kshitij.dhakal.3" class="clickable-row">
+                            <td style="width: 2em;"><i class="fab fa-facebook-f"></i></td>
+                            <td>kshitij.dhakal.3</td>
+                        </tr>
+                        <tr data-href="https://twitter.com/dhakal_kshitij" class="clickable-row">
+                            <td style="width: 2em;"><i class="fab fa-twitter"></i></td>
+                            <td>@dhakal_kshitij</td>
+                        </tr>
+                    </table>
+                </div>
+
                 <div class="section">Passions</div>
+                <div class="row">Programming</div>
+                <div class="row">Problem/Program Solving</div>
+                <div class="row">Playing Guitar</div>
+
                 <div class="section">Skills</div>
                 <div class="row skills" style="flex-wrap: wrap;">
                     <div class="skills-items">Java</div>
@@ -81,9 +125,33 @@
 
                 <div class="section">Language</div>
                 <div class="col">
-                    <div class="row">Nepali</div>
-                    <div class="row">English</div>
-                    <div class="row">Hindi</div>
+                    <div class="row languages-items">Nepali
+                        <div class="text-right">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <div class="row languages-items">English
+                        <div class="text-right">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="row languages-items">Hindi
+                        <div class="text-right">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star unchecked"></span>
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="section">My Life Philosophy</div>
             </div>
@@ -142,6 +210,7 @@
             }
         });
     </script>
+    <script src="scripts/clickable_row.js"></script>
 </body>
 
 </html>
