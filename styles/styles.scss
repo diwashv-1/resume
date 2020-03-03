@@ -1,5 +1,38 @@
+$chapter-sub-opacity: 0.9;
+$section-color: rgba(
+  $color: #000000,
+  $alpha: 0.5
+);
+$subsection-color: rgba(
+  $color: #000000,
+  $alpha: 0.6
+);
+$subsubsection-color: rgba(
+  $color: #000000,
+  $alpha: 0.6
+);
+$text-color: rgba(
+  $color: #000000,
+  $alpha: 0.7
+);
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
 :root {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: $text-color;
+  margin: 1cm;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 2cm;
+    font-size: smaller;
+  }
 }
 
 .row {
@@ -7,55 +40,135 @@
   flex-direction: row;
 }
 
-col {
+.col {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 .container {
-  // display: -moz-inline-grid;
-  margin: 2.5em;
+}
+
+.clickable-row {
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .chapter {
-  font-size: 2.5em;
+  font-size: xxx-large;
+}
+
+.chapter-sub {
+  @extend .bottom;
+  font-size: x-large;
   font-weight: 500;
+  opacity: $chapter-sub-opacity;
 }
 
 .section {
-  font-size: 1.25em;
-  font-weight: 600;
-  opacity: 0.5;
+  font-size: x-large;
+  font-weight: 500;
+  color: $section-color;
+  border-bottom: 0.2em solid rgba($color: #000000, $alpha: 0.05);
+  margin: 1em 0 0.3em 0;
 }
 
 .subsection {
-  font-size: 1.25em;
-  font-weight: 900;
+  font-size: x-large;
+  font-weight: 600;
+  color: $subsection-color;
 }
 
 .subsubsection {
-  font-size: 1.25em;
-  opacity: 0.5;
+  color: $subsubsection-color;
 }
 
 canvas {
-  // margin: 10em;
-  // padding: 10em;
-  // height: 10;
   margin: auto;
 }
 
 .photo-div {
   width: fit-content;
   margin-left: auto;
-  margin-right: 5em;
+  margin-right: auto;
+}
+
+@mixin body-text {
+  color: rgba($color: #000000, $alpha: 0.7);
+  font-weight: 700;
 }
 
 .skills-items {
-  border: .15em solid rgba($color: #000000, $alpha: 0.3);
-  border-radius: 0.5em;
-  padding: 0.1em 0.4em 0.1em 0.4em;
-  margin-right: 0.3em;
-  margin-bottom: .2em;
+  border: 0.15em solid rgba($color: #000000, $alpha: 0.15);
+  border-radius: 0.8em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  margin: 0.3em 0.5em 0.2em 0;
+}
+
+.contact-items {
+  margin: 0 1em 0.5em 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.text-right {
+  margin-left: auto;
+  margin-right: 0em;
+}
+
+.bottom {
+  height: 100%;
+  align-items: flex-end;
+}
+
+.unchecked {
+  color: rgba($color: #000000, $alpha: 0.25);
+}
+
+@mixin resume-body-column {
+  margin: 0 1em 0 0;
+  width: 40vw;
+}
+
+.left-col {
+  @include resume-body-column();
+}
+
+.right-col {
+  @include resume-body-column();
+  margin-right: 0em;
+  margin-left: auto;
+  right: 0;
+}
+
+.university-info {
+  margin: 0 2em 0 0;
+}
+
+.xx-large {
+  font-size: xx-large;
+}
+
+.large {
+  font-size: large;
+}
+
+.medium {
+  font-size: medium;
+}
+
+.small {
+  font-size: small;
+}
+
+i {
+  margin: 0 0.2em 0 0;
+}
+
+.test {
+  background: green;
+}
+
+ul {
+  list-style-type: circle;
 }
