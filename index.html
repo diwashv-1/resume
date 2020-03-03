@@ -5,50 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kshitij_Dhakal_resume2020</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="introduction row">
-            <div class="introduction-child col">
-                <div class="about-me col">
+        <div class="row" style="height: fit-content;">
+            <div class="col" style="width: 100%;">
+                <div class="col">
                     <div class="chapter">Kshitij Dhakal</div>
                     <div class="subtitle">Java Developer</div>
                 </div>
-                <div class="contact row">
-                    <div class="phone">+977-9869241546</div>
-                    <div class="email">dhakalkshitij@gmail.com</div>
-                    <div class="address">Narayangarh, Chitwan</div>
+                <div class="row">
+                    <div>+977-9869241546</div>
+                    <div>dhakalkshitij@gmail.com</div>
+                    <div>Narayangarh, Chitwan</div>
                 </div>
             </div>
-            <div class="introduction-child image-container col">
-                <img class="photo" src="images/IMG-d983b35c9f35c5caea4668d0f0ea22cb-V.jpg" height="150" width="150"
-                    style="border-radius: 100px;">
+            <div class="photo-div image-container col" style="">
+                <img class="photo" src="images/IMG-d983b35c9f35c5caea4668d0f0ea22cb-V.jpg" height="150em" width="auto"
+                    style="border-radius: 100%;
+                    ">
             </div>
+
         </div>
         <div class="row">
             <div class="col">
-                <div class="row">
-                    <div class="education">
-                        <div class="section">Education</div>
-                        <div class="subsection">Small Heaven Model School</div>
-
+                <div>
+                    <div class="section">Education</div>
+                    <div class="subsection">Small Heaven Model School</div>
+                </div>
+                <div>
+                    <div class="section">My Time</div>
+                    <!-- <div class="subsection"></div> -->
+                    <div style="
+                    /* background-color: cadetblue; */
+                     width: 50vw;
+                     height: auto;
+                     ">
+                        <div style="
+                        /* background: aqua; */
+                        width: 35vw;
+                        height: auto;
+                        margin: auto;
+                       ">
+                            <canvas height="15em" width="24em" id="myChart"></canvas>
+                        </div>
                     </div>
                 </div>
+                <div class="section">
+                    Experience
+                </div>
+                <div class="subsection">Java Developer</div>
+                <div class="subsubsection">Mahuri Ventures</div>
+                <div class="subsection">Java Developer</div>
+                <div class="subsubsection">Salyani Technologies Ltd.</div>
             </div>
             <div class="col">
-                <div class="row">
-                    <div class="find-me-online">
-                        <div class="section">Find Me Online</div>
-
-                    </div>
+                <div class="section">Find Me Online</div>
+                <div class="section">Passions</div>
+                <div class="section">Skills</div>
+                <div class="row skills" style="flex-wrap: wrap;">
+                    <div class="skills-items">Java</div>
+                    <div class="skills-items">Flutter</div>
+                    <div class="skills-items">Vue.js</div>
+                    <div class="skills-items">Spring</div>
+                    <div class="skills-items">JPA</div>
+                    <div class="skills-items">Hibernate</div>
+                    <div class="skills-items">Maven</div>
+                    <div class="skills-items">Gradle</div>
+                    <div class="skills-items">Html</div>
+                    <div class="skills-items">CSS</div>
+                    <div class="skills-items">Javascript</div>
                 </div>
 
+                <div class="section">Language</div>
+                <div class="col">
+                    <div class="row">Nepali</div>
+                    <div class="row">English</div>
+                    <div class="row">Hindi</div>
+                </div>
+                <div class="section">My Life Philosophy</div>
             </div>
         </div>
+
+
+
     </div>
 
+    <script type="module" src="scripts/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Programming', 'Family and Friends', 'Working', 'Relaxing', 'Social Media', 'Habitual Activity'],
+                datasets: [{
+                    data: [6, 2, 8, 2, 2, 1],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.75)',
+                        'rgba(54, 162, 235, 0.75)',
+                        'rgba(255, 206, 86, 0.75)',
+                        'rgba(75, 192, 192, 0.75)',
+                        'rgba(153, 102, 255, 0.75)',
+                        'rgba(255, 159, 64, 0.75)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    display: true,
+                    position: "right",
+                },
+                title: {
+                    display: true,
+                    // text: "My Time",
+                },
+                layout: {
+                    padding: {
+                        top: 10,
+                        right: 10,
+                        bottom: 10,
+                        left: 10,
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

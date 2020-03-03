@@ -1,0 +1,72 @@
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container {
+  margin: 2.5em;
+}
+
+.chapter {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.section {
+  font-size: 1.25em;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.subsection {
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+.subsubsection {
+  font-size: 1.25em;
+  opacity: 0.5;
+}
+
+canvas {
+  margin: auto;
+}
+
+.photo-div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 5em;
+}
+
+.skills-items {
+  border: 0.15em solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  padding: 0.1em 0.4em 0.1em 0.4em;
+  margin-right: 0.3em;
+  margin-bottom: .2em;
+}
+/*# sourceMappingURL=styles.css.map */
